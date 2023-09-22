@@ -1,0 +1,117 @@
+body{
+    min-height: 98vh;
+    display: flex;
+    flex-direction: column;
+    background-color: slategray;
+    color: wheat;
+}
+
+li a {
+    text-decoration: none;
+    font: 18pt 'Consolas';
+}
+
+li a:hover {
+    color: yellow;
+}
+
+ul {
+    list-style-type: none;
+}
+
+header, main .sidebar, main .content, footer {
+    border: 1px solid red;
+    text-align: center;
+    vertical-align: middle;
+}
+
+header {
+    padding: 20px;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+}
+
+header ul {
+    padding: 0;
+    margin: 0;
+    display: flex;
+    flex-direction: row;
+}
+
+header li {
+    margin-right: 20px;
+}
+
+main {
+    margin: auto 0;
+    padding: 10px 0px;
+    display: flex;
+    flex: 1;
+    flex-direction: row;
+}
+
+main .sidebar, main .content {
+    border: 1px solid red;
+    vertical-align: middle;
+}
+
+.sidebar {
+    flex: 1;
+    padding: 20px;
+    margin-right: 5px;
+}
+
+.column {
+    text-align: left;
+    height: 100%;
+}
+
+.content {
+    flex: 3;
+    padding: 20px;
+    margin-left: 5px;
+}
+
+.content .row {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-bottom: 10px;
+}
+
+.row img {
+    width: 150px;
+    margin-right: 25px;
+    transition: transform 0.3s;
+    border: 1px dashed crimson;
+    border-radius: 15px;
+    box-shadow: 0 0 20px forestgreen;
+}
+
+.row img:hover {
+    transform: scale(3);
+}
+
+footer{
+    height: 200px;
+    margin-top: auto;
+    color: white;
+    background-color: #22396a;
+    display: flex;
+    justify-content: space-evenly;
+}
+
+.struct {
+    margin-top: 30px;
+    text-align: start;
+}
+
+.struct h4 {
+    font-weight: bold;
+}
+
+.struct li {
+    margin-top: 10px;
+}
